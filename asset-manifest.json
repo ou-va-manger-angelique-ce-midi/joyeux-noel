@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/joyeux-noel/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/joyeux-noel/static/js/main.6bb37cfa.chunk.js",
-    "main.js.map": "/joyeux-noel/static/js/main.6bb37cfa.chunk.js.map",
-    "runtime-main.js": "/joyeux-noel/static/js/runtime-main.6fa5261f.js",
-    "runtime-main.js.map": "/joyeux-noel/static/js/runtime-main.6fa5261f.js.map",
-    "static/js/2.52b30039.chunk.js": "/joyeux-noel/static/js/2.52b30039.chunk.js",
-    "static/js/2.52b30039.chunk.js.map": "/joyeux-noel/static/js/2.52b30039.chunk.js.map",
-    "static/js/3.5c409f92.chunk.js": "/joyeux-noel/static/js/3.5c409f92.chunk.js",
-    "static/js/3.5c409f92.chunk.js.map": "/joyeux-noel/static/js/3.5c409f92.chunk.js.map",
+    "main.css": "/joyeux-noel/static/css/main.88a5d4fb.chunk.css",
+    "main.js": "/joyeux-noel/static/js/main.fbb9b4ce.chunk.js",
+    "main.js.map": "/joyeux-noel/static/js/main.fbb9b4ce.chunk.js.map",
+    "runtime-main.js": "/joyeux-noel/static/js/runtime-main.d371841f.js",
+    "runtime-main.js.map": "/joyeux-noel/static/js/runtime-main.d371841f.js.map",
+    "static/js/2.30c80995.chunk.js": "/joyeux-noel/static/js/2.30c80995.chunk.js",
+    "static/js/2.30c80995.chunk.js.map": "/joyeux-noel/static/js/2.30c80995.chunk.js.map",
+    "static/js/3.a336e97c.chunk.js": "/joyeux-noel/static/js/3.a336e97c.chunk.js",
+    "static/js/3.a336e97c.chunk.js.map": "/joyeux-noel/static/js/3.a336e97c.chunk.js.map",
     "index.html": "/joyeux-noel/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/joyeux-noel/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.52b30039.chunk.js.LICENSE.txt": "/joyeux-noel/static/js/2.52b30039.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/joyeux-noel/static/media/logo.6ce24c58.svg"
+    "static/css/main.88a5d4fb.chunk.css.map": "/joyeux-noel/static/css/main.88a5d4fb.chunk.css.map",
+    "static/js/2.30c80995.chunk.js.LICENSE.txt": "/joyeux-noel/static/js/2.30c80995.chunk.js.LICENSE.txt",
+    "static/media/burger_logo.84e0a5f0.svg": "/joyeux-noel/static/media/burger_logo.84e0a5f0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6fa5261f.js",
-    "static/js/2.52b30039.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.6bb37cfa.chunk.js"
+    "static/js/runtime-main.d371841f.js",
+    "static/js/2.30c80995.chunk.js",
+    "static/css/main.88a5d4fb.chunk.css",
+    "static/js/main.fbb9b4ce.chunk.js"
   ]
 }
