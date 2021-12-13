@@ -5,12 +5,8 @@ import loadingSentences from "./loadingSentences.js";
 import React, { useState } from "react";
 import seedrandom from "seedrandom";
 
-function getRandomInt(max, seed) {
-  if (seed) {
-    const randomGenerator = seedrandom(seed)
-    return Math.floor(randomGenerator() * max);
-  }
-  return Math.floor(Math.random() * max);
+function getRandomInt(max, generator) {
+  return Math.floor(generator() * max);
 }
 
 
@@ -18,15 +14,16 @@ function getRandomInt(max, seed) {
   return (
     <div>
       <h1>Trouvé ! </h1>
-      <h2>{restaurant.name}</h2>
-      <a
+      <h2><a
           className="App-link"
           href={restaurant.link}
           target="_blank"
           rel="noopener noreferrer"
         >
-         Lien vers Google Maps
-        </a>
+         {restaurant.name}
+        </a></h2>
+      <p>{restaurant.description}</p>
+
       <p>Bon appétit &#128523; </p>
     </div>
   ); 
@@ -36,23 +33,27 @@ const App = function () {
   
   const today = new Date()
   const seed = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()
+  const randomGenerator = seedrandom(seed)
 
   const [loadingState, setLoadingState] = useState("notLoaded");
-  const loadingSentence = loadingSentences[getRandomInt(loadingSentences.length)];
-  const restaurant= restaurants[getRandomInt(restaurants.length, seed)];
+  const loadingSentence = loadingSentences[getRandomInt(loadingSentences.length, Math.random)];
+  const firtRestaurant= restaurants[getRandomInt(restaurants.length, randomGenerator)];
+  const secondRestaurant= restaurants[getRandomInt(restaurants.length, randomGenerator)];
 
   const switchDisplay = (loadingState) => {
     switch(loadingState) {
-      case "notLoaded": return <button className="button" onClick={() => {setLoadingState("loading"); setTimeout(() => setLoadingState("loaded"), 2000)}}>Trouver un restaurant</button>;
+      case "notLoaded": return <button className="button" onClick={() => {setLoadingState("loading"); setTimeout(() => setLoadingState("firstRestaurantLoaded"), 2000)}}>Je mange où ce midi ? </button>
       case "loading": return <h2>{loadingSentence}</h2>
-      case "loaded": return <PropositionDisplay restaurant={restaurant} /> 
+      case "firstRestaurantLoaded": return <div><PropositionDisplay restaurant={firtRestaurant} /><button className="button" onClick={() => {setLoadingState("loading"); setTimeout(() => setLoadingState("secondRestaurantLoaded"), 2000)}}>C'est nul, donne moi la deuxième proposition du jour ! </button></div>
+      case "secondRestaurantLoaded": return <div><PropositionDisplay restaurant={secondRestaurant} /> <button className="button" onClick={() => setLoadingState("theEnd")}>Bof, encore autre chose ! </button></div>
+      case "theEnd": return <h2>Il n'y a que deux propositions par jour. Il faut bien garder quelques surprises ... </h2>
       default: return <h2>Une erreur est survenue</h2>
     }
   }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" style={{marginBottom:50}}/>
+        <img src={logo} className="App-logo" alt="logo" style={{marginBottom:30}}/>
         {switchDisplay(loadingState)}
         <p className="footer" style={{fontSize:10}}>Sur une idée originale de Roch et Chloé HB</p> 
       </header>
