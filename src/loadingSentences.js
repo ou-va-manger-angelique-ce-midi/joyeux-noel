@@ -6,6 +6,7 @@ const loadingSentences = [
     "Attends 2 min, je vais me faire un café ...",
     "Je demande à Philippe Etchebest ...", 
     "Hmmm je vais visiter le quartier pour chercher les restos ...", 
-    "J'appelle ma grand mère pour lui demander une idée ..."
+    "J'appelle ma grand mère pour lui demander une idée ...", 
+    "Je fais les fonds de tiroir ...",
 ]
 export default loadingSentences;   

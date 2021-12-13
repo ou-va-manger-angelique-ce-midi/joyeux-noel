@@ -43,15 +43,16 @@ const App = function () {
 
   const switchDisplay = (loadingState) => {
     switch(loadingState) {
-      case "notLoaded":   return <button className="button" onClick={() => {setLoadingState("loading"); setTimeout(() => setLoadingState("loaded"), 2000)}}>Trouver un restaurant</button>;
-      case "loading":   return <h2>{loadingSentence}</h2>
+      case "notLoaded": return <button className="button" onClick={() => {setLoadingState("loading"); setTimeout(() => setLoadingState("loaded"), 2000)}}>Trouver un restaurant</button>;
+      case "loading": return <h2>{loadingSentence}</h2>
       case "loaded": return <PropositionDisplay restaurant={restaurant} /> 
+      default: return <h2>Une erreur est survenue</h2>
     }
   }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" style={{marginBottom:20}}/>
+        <img src={logo} className="App-logo" alt="logo" style={{marginBottom:50}}/>
         {switchDisplay(loadingState)}
         <p className="footer" style={{fontSize:10}}>Sur une idée originale de Roch et Chloé HB</p> 
       </header>

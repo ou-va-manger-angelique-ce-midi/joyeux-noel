@@ -32,7 +32,7 @@ const restaurants = [
       link: "https://goo.gl/maps/CHA13D9y6vVFBwVBA"
     },
     {
-      name: 'Poke Bowl',
+      name: 'Poke Bowl KALY',
       link: "https://goo.gl/maps/y6k2fWstQyZySLoEA"
     },
   ];
