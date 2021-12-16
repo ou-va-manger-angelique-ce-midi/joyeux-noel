@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/joyeux-noel/static/css/main.88a5d4fb.chunk.css",
-    "main.js": "/joyeux-noel/static/js/main.31afd249.chunk.js",
-    "main.js.map": "/joyeux-noel/static/js/main.31afd249.chunk.js.map",
+    "main.css": "/joyeux-noel/static/css/main.90cbc41d.chunk.css",
+    "main.js": "/joyeux-noel/static/js/main.586b9fe3.chunk.js",
+    "main.js.map": "/joyeux-noel/static/js/main.586b9fe3.chunk.js.map",
     "runtime-main.js": "/joyeux-noel/static/js/runtime-main.d371841f.js",
     "runtime-main.js.map": "/joyeux-noel/static/js/runtime-main.d371841f.js.map",
     "static/js/2.30c80995.chunk.js": "/joyeux-noel/static/js/2.30c80995.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.a336e97c.chunk.js": "/joyeux-noel/static/js/3.a336e97c.chunk.js",
     "static/js/3.a336e97c.chunk.js.map": "/joyeux-noel/static/js/3.a336e97c.chunk.js.map",
     "index.html": "/joyeux-noel/index.html",
-    "static/css/main.88a5d4fb.chunk.css.map": "/joyeux-noel/static/css/main.88a5d4fb.chunk.css.map",
+    "static/css/main.90cbc41d.chunk.css.map": "/joyeux-noel/static/css/main.90cbc41d.chunk.css.map",
     "static/js/2.30c80995.chunk.js.LICENSE.txt": "/joyeux-noel/static/js/2.30c80995.chunk.js.LICENSE.txt",
     "static/media/burger_logo.84e0a5f0.svg": "/joyeux-noel/static/media/burger_logo.84e0a5f0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d371841f.js",
     "static/js/2.30c80995.chunk.js",
-    "static/css/main.88a5d4fb.chunk.css",
-    "static/js/main.31afd249.chunk.js"
+    "static/css/main.90cbc41d.chunk.css",
+    "static/js/main.586b9fe3.chunk.js"
   ]
 }
